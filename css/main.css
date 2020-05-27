@@ -57,6 +57,9 @@ body {
     width: 100%;
     margin-bottom: 10px;
   }
+  .menu-list {
+    display: none;
+  }
 }
 @media (min-width: 767px) {
   .sidebar .menu-list .menu-items {
