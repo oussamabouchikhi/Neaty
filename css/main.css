@@ -74,10 +74,12 @@ body {
 
 /* Header */
 header {
+  width: 100%;
   height: 624px;
 }
 
 header img {
+  width: 100%;
   height: 100% !important;
 }
 
@@ -101,9 +103,7 @@ header img {
 .about-team .container {
   padding: 2% 5%;
 }
-/* .about-team img {
-  height: 50%
-} */
+
 .about-team h3 {
  color: #006599;
  font-size: 2.2rem;
@@ -124,4 +124,22 @@ header img {
   font-size: 1.4rem;
   padding: 18px 40px;
 }
-/*  */
+.about-team a:hover {
+  background-color: #2790c6;
+}
+
+/* Galery one */
+.galery-one {
+  margin: 7% 0 7% 5%;
+}
+.galery-one h2 {
+  color: #006599;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+.galery-one .img-container {
+  max-width: 20% !important;
+  overflow: auto;
+  margin-left: -10px;
+  margin-right: -10px;
+}
