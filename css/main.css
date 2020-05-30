@@ -143,3 +143,16 @@ header img {
   margin-left: -10px;
   margin-right: -10px;
 }
+
+/* Galery two */
+.galery-two {
+  margin: 7% 0 7% 5%;
+}
+.galery-two h2 {
+  color: #006599;
+  margin-bottom: 30px;
+  font-size: 2.2rem;
+}
+.galery-two .img-container{
+    margin: 0 -10px;
+}
