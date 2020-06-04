@@ -20,18 +20,18 @@
         </div>
         <div class="menu-list text-justify">
           <ul id="menu-items" class="menu-items">
-            <li><a href="#">Welcome</a></li>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Gallery One</a></li>
-            <li><a href="#">Second Gallery</a></li>
-            <li><a href="#">Third Gallery</a></li>
-            <li><a href="#">Contact Us</a></li>
+            <li><a href="#welcome">Welcome</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#galery-one">Gallery One</a></li>
+            <li><a href="#galery-two">Second Gallery</a></li>
+            <li><a href="#galery-three">Third Gallery</a></li>
+            <li><a href="#contact">Contact Us</a></li>
           </ul>
         </div>
     </div>
     <!-- Sidebar start -->
     <!-- Main content section start -->
-    <section class="col-12 col-md-8 float-right mr-0 p-0">
+    <section class="col-12 col-md-8 float-right mr-0 p-0" id="welcome">
       <header>
         <img class="img img-fluid" src="images/neaty-01.jpg" alt="banner">
       </header>
@@ -43,7 +43,7 @@
         </div>
       </div>
       <!-- About team section -->
-      <div class="about-team">
+      <div class="about-team" id="about">
         <div class="container">
           <div class="row">
             <div class="col-md-4">
@@ -61,7 +61,7 @@
       </div>
 
       <!-- Galery one -->
-      <div class="galery-one">
+      <div class="galery-one" id="galery-one">
         <h2>Galery One</h2>
         <!-- gallery start -->
         <div class="gallery">
@@ -71,32 +71,31 @@
             </a>
           </div>
           <div class="col-xs-6 col-sm-2 d-inline-block img-container">
-            <a href="images/neaty-04.jpg" data-caption="Image caption">
+            <a href="images/neaty-04.jpg">
                 <img class="img-fluid" src="images/neaty-04.jpg" alt="First image">
             </a>
           </div>
           <div class="col-xs-6 col-sm-2 d-inline-block img-container">
-            <a href="images/neaty-05.jpg" data-caption="Image caption">
+            <a href="images/neaty-05.jpg">
                 <img class="img-fluid" src="images/neaty-05.jpg" alt="First image">
             </a>
           </div>
           <div class="col-xs-6 col-sm-2 d-inline-block img-container">
-            <a href="images/neaty-06.jpg" data-caption="Image caption">
+            <a href="images/neaty-06.jpg">
                 <img class="img-fluid" src="images/neaty-06.jpg" alt="First image">
             </a>
           </div>
           <div class="col-xs-6 col-sm-2 d-inline-block img-container">
-            <a href="images/neaty-07.jpg" data-caption="Image caption">
+            <a href="images/neaty-07.jpg">
                 <img class="img-fluid" src="images/neaty-07.jpg" alt="First image">
             </a>
           </div>
         </div>
         <!-- gallery end -->
-
       </div>
 
       <!-- Galery two -->
-      <div class="galery-two">
+      <div class="galery-two" id="galery-two">
         <h2>Galery Two</h2>
         <!-- gallery start -->
         <div class="gallery">
@@ -120,7 +119,7 @@
       </div>
 
       <!-- Galery three -->
-      <div class="galery-three">
+      <div class="galery-three" id="galery-three">
         <h2>Galery Three</h2>
         <!-- gallery start -->
         <div class="gallery">
@@ -148,7 +147,7 @@
         <!-- gallery end -->
       </div>
     </section>
-    <!-- Main content section start -->
+    <!-- Main content section end -->
 
     <!-- JQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
@@ -158,6 +157,13 @@
     <script type="text/javascript">
       window.addEventListener('load', function() {
         baguetteBox.run('.gallery');
+      });
+      // change links color
+      $(function() {
+         var links = $('.sidebar a').click(function() {
+             links.removeClass('active');
+             $(this).addClass('active');
+         });
       });
     </script>
   </body>
