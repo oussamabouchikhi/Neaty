@@ -31,7 +31,7 @@
     </div>
     <!-- Sidebar start -->
     <!-- Main content section start -->
-    <section class="col-12 col-md-8 float-right mr-0 p-0" id="welcome">
+    <section class="col-12 col-md-8 float-right mr-0 p-0" id="welcome" onload="startActive()">
       <header>
         <img class="img img-fluid" src="images/neaty-01.jpg" alt="banner">
       </header>
@@ -164,6 +164,10 @@
              links.removeClass('active');
              $(this).addClass('active');
          });
+      });
+      // Make welcome link active on page load
+      $(function startActive() {
+        var firstLink = $('.sidebar a').first().addClass('active');
       });
     </script>
   </body>
